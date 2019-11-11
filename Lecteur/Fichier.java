@@ -6,7 +6,7 @@ import java.io.IOException;
 public abstract class Fichier {
 	public Path chemin;
 
-  // On utilise le constructeur afin d'instancier la propriÃ©tÃ© chemin
+  // On utilise le constructeur afin d'instancier la propriété chemin
 	Fichier(String path) {
 		chemin = Paths.get(path);
 	}
@@ -29,15 +29,15 @@ public abstract class Fichier {
 	}
 
   public String lireInverse() {
-    // On rÃ©cupÃ¨re le texte Ã  partir de la mÃ©thode lire()
+    // On récupère le texte à partir de la méthode lire()
     String texte = this.lire();
     // On instancie un objet de type stringBuilder afin de manipuler
-    // la chaine de caractÃ¨re
+    // la chaine de caractère
     StringBuilder stringBuilder = new StringBuilder();
     stringBuilder.append(texte); 
     // On inverse le texte
     stringBuilder = stringBuilder.reverse();
-    // On converti l'objet stringBuilder en chaine de caractÃ¨res
+    // On converti l'objet stringBuilder en chaine de caractères
     return stringBuilder.toString();
   }
 
