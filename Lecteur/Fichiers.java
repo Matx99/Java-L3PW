@@ -1,4 +1,4 @@
-// On hÃ©rite de la classe Fichier et on implÃ©mante l'interface Lecteur
+// On hérite de la classe Fichier et on implémante l'interface Lecteur
 public class Fichiers extends Fichier implements Lecteur {
 
 	Fichiers(String path) {
