@@ -1,2 +1,2 @@
 # Java
-Java licence pro
+Java projects in my actual third year degree
