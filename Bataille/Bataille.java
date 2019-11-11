@@ -36,11 +36,13 @@ public class Bataille {
             
             if(carteJoueur1.comparateur(carteJoueur2) > 0) { // si la valeur de la carte du j1 et > à celle du j2
                 joueur1.gagnePoint(); // alors j1 gagne un pt
-                joueur1.addCarte(carteJoueur1); // puis il recupere les cartes
+                joueur1.addCarte(carteJoueur1); 
+	    	joueur1.addCarte(carteJoueur2); // puis il recupere les cartes
             }
             else { // sinon
                 joueur2.gagnePoint(); // j2 gagne un pt
-                joueur2.addCarte(carteJoueur2); // puis il recupere les cartes
+                joueur2.addCarte(carteJoueur2);
+	    	joueur2.addCarte(carteJoueur1); // puis il recupere les cartes
             }
             
             System.out.println("Nombre de cartes du Joueur 1 " + joueur1.getPaquet().size() + ", score :" + joueur1.getScore()); 
